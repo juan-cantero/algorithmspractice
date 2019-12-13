@@ -9,19 +9,16 @@ public class ReverseString {
 //   reverse('apple') === 'leppa'
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
-  // trying ssh
-  // another commet
+
 
   public static String reverse(String str) {
-    StringBuilder collect = new StringBuilder();
-    char [] arr = str.toCharArray();
-    for (int i = arr.length -1; i >=  0; i--) {
-      collect.append(arr[i]);
-    }
-    return collect.toString();
+    return null;
+    // TODO: 12/13/19  
+   
   }
 
   public static String fastReverse(String str) {
-    return new StringBuilder(str).reverse().toString();
+    return null;
+    // TODO: 12/13/19
   }
 }
