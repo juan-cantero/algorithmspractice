@@ -18,4 +18,5 @@ public class ReverseStringTest {
     String expected = ReverseString.fastReverse("hola");
     assertEquals(expected,"aloh");
   }
+
 }
