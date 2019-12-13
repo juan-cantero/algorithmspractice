@@ -9,6 +9,7 @@ public class ReverseString {
 //   reverse('apple') === 'leppa'
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
+  // trying ssh
 
   public static String reverse(String str) {
     StringBuilder collect = new StringBuilder();
