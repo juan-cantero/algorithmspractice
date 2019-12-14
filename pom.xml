@@ -18,7 +18,12 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
+
+
+
+        </build>
+
+
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>

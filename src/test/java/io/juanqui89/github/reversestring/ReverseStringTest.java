@@ -1,6 +1,7 @@
 package io.juanqui89.github.reversestring;
 
 
+import io.juanqui89.github.reversestring.ReverseString;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
