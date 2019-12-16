@@ -16,4 +16,17 @@ public class Palindrome {
                   .toString()
                   .equalsIgnoreCase(str);
   }
+
+  public static boolean isPalindrome2(String str) {
+    int head = 0;
+    int tail = str.length() -1;
+    while (tail >= head) {
+      if (str.charAt(head) == str.charAt(tail)){
+        head++;
+        tail--;
+      }else
+        return false;
+    }
+    return true;
+  }
 }

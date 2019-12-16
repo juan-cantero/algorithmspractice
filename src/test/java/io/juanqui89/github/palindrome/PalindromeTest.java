@@ -8,7 +8,12 @@ public class PalindromeTest {
 
   @Test
   public void testIsPalindrome() {
-    Boolean isPalindrome = Palindrome.isPalindrome("abba") ;
+    Boolean isPalindrome = Palindrome.isPalindrome("abdba") ;
     assertTrue(isPalindrome);
+  }
+
+  @Test
+  public void testIsPalindrome2() {
+    assertTrue(Palindrome.isPalindrome2("abdba"));
   }
 }
