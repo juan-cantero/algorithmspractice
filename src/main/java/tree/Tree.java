@@ -11,6 +11,12 @@ package tree;
 // on the tree class.  Each method should accept a
 // function that gets called with each element in the tree
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.function.Consumer;
+
 public class Tree<E> {
   private Tnode<E> root;
 
@@ -21,4 +27,15 @@ public class Tree<E> {
   public Tnode<E> getRoot() {
     return root;
   }
+
+  public void traverseBf(Consumer<E> consumer) {
+    Queue<Tnode> q = new LinkedList<>();
+    q.add(root);
+
+    while (!q.isEmpty()) {
+      consumer.accept((E) q.peek().getData());
+      q.poll().getChildren().forEach(c -> q.add((Tnode) c));
+    }
+  }
+
 }
